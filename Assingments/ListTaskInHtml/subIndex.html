@@ -1,146 +1,194 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>List Tasks</title>
-</head>
-<body bgcolor="#f2f2f2">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
-    
-    <div align="center">
-        <table border="1" width="80%" cellpadding="15" bgcolor="white">
-            <tr>
-                <td align="center">
-                    <font size="7"><b>📋 List Tasks</b></font><br>
-                    <font size="4">Category Overview & Task Solutions</font>
-                </td>
-            </tr>
-        </table>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #111, #333);
+        color: white;
+      }
+
+      .card {
+        width: 80%;
+        margin: 25px auto;
+        background: white;
+        color: black;
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+      }
+
+      .header-card {
+        background: linear-gradient(135deg, #000, #444);
+        color: white;
+        text-align: center;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        background: linear-gradient(135deg, #000, #555);
+        color: white;
+        padding: 12px;
+      }
+
+      td {
+        padding: 12px;
+        text-align: center;
+      }
+
+      tr:hover {
+        background: #f2f2f2;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #000, #555);
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        background: black;
+        box-shadow: 0 0 10px black;
+        transform: scale(1.05);
+      }
+
+      textarea {
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-family: "Poppins", sans-serif;
+        padding: 5px;
+      }
+
+      .back-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 40px;
+        background: linear-gradient(135deg, #111, #555);
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .contact-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        margin: 0 6px;
+      }
+
+      .contact-links a:hover {
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="card header-card">
+      <h1>📋 List Tasks</h1>
+      <p>Category Overview & Task Solutions</p>
     </div>
 
-    <br>
-
-    
-    <div align="center">
-        <table border="1" width="80%" cellpadding="12" bgcolor="white">
-            <tr>
-                <td>
-                    <font size="4">
-                    Welcome to the <b>List Tasks</b> section!  
-                    Below is a list of assigned tasks along with their preview images and solution links.  
-                    Click on any solution to view the complete implementation.
-                    </font>
-                </td>
-            </tr>
-        </table>
+    <div class="card">
+      <p style="font-size: 18px">
+        Welcome to the <b>List Tasks</b> section.<br /><br />
+        Below is a list of assigned tasks along with their preview images and
+        solution links.
+      </p>
     </div>
 
-    <br>
+    <div class="card">
+      <table border="1">
+        <tr>
+          <th>S.No</th>
+          <th>Task Image</th>
+          <th>Solution</th>
+          <th>Remarks</th>
+          <th>Completed?</th>
+        </tr>
 
-    
-    <div align="center">
-        <table border="1" width="80%" cellpadding="12" bgcolor="white">
-            <tr>
-                <th>S.No</th>
-                <th>Task Image</th>
-                <th>Solution</th>
-                <th>Remarks</th>
-                <th>Completed?</th>
-            </tr>
+        <tr>
+          <td>1</td>
+          <td><img src="../assets/list1.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_01/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
 
-            
-            <tr>
-                <td align="center">1</td>
-                <td align="center"><img src="../assets/list1.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_01/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="../assets/list2.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_02/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
 
-            
-            <tr>
-                <td align="center">2</td>
-                <td align="center"><img src="../assets/list2.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_02/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="../assets/list3.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_03/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
 
-            
-            <tr>
-                <td align="center">3</td>
-                <td align="center"><img src="../assets/list3.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_03/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="../assets/list4.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_04/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
 
-            
-            <tr>
-                <td align="center">4</td>
-                <td align="center"><img src="../assets/list4.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_04/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="../assets/list5.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_05/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
 
-
-            <tr>
-                <td align="center">5</td>
-                <td align="center"><img src="../assets/list5.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_05/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
-
-
-            <tr>
-                <td align="center">6</td>
-                <td align="center"><img src="../assets/list6.png" width="150" height="120"></td>
-                <td align="center"><a href="./Task_06/index.html">View Solution</a></td>
-                <td align="center"><textarea rows="3" cols="20"></textarea></td>
-                <td align="center"><input type="checkbox"></td>
-            </tr>
-
-        </table>
+        <tr>
+          <td>6</td>
+          <td><img src="../assets/list6.png" width="150" height="120" /></td>
+          <td><a class="btn" href="./Task_06/index.html">View Solution</a></td>
+          <td><textarea rows="3" cols="20"></textarea></td>
+          <td><input type="checkbox" /></td>
+        </tr>
+      </table>
     </div>
 
-    <br><br>
-
-    
-    <div align="center">
-        <table border="1" width="80%" cellpadding="15" bgcolor="white">
-            <tr>
-                <td align="center">
-                    <font size="5">🔙 <a href="../homePage.html"><b>Back to Home</b></a></font>
-                </td>
-            </tr>
-        </table>
+    <div class="card" align="center">
+      <a class="back-btn" href="../homePage.html">🔙 Back to Home</a>
     </div>
 
-    <br>
-
-    
-    <div align="center">
-        <table border="1" width="80%" cellpadding="20" bgcolor="white">
-            <tr>
-                <td align="center">
-                    <font size="5"><b>📞 Contact Me</b></font><br><br>
-
-                    <font size="4">
-                        <b>Aman Verma</b><br><br>
-                        Phone : +91 7974716422<br>
-                        Email : amanverma78503@gmail.com<br><br>
-
-                        <a href="https://github.com/CodeWithAman" target="_blank">🌐 GitHub</a> |
-                        <a href="https://www.linkedin.com/in/aman-verma-cs20/" target="_blank">💼 LinkedIn</a> |
-                        <a href="https://wa.me/917974716422" target="_blank">💬 WhatsApp</a>
-                    </font>
-                </td>
-            </tr>
-        </table>
+    <div class="card" align="center">
+      <h2>📞 Contact Me</h2>
+      <h3>Aman Verma</h3>
+      <p>
+        Phone : <b>+91 7974716422</b><br />
+        Email : <b>amanverma78503@gmail.com</b>
+      </p>
+      <br />
+      <div class="contact-links">
+        <a href="https://github.com/CodeWithAman" target="_blank">🌐 GitHub</a>
+        <a href="https://www.linkedin.com/in/aman-verma-cs20/" target="_blank">💼 LinkedIn</a>
+        <a href="https://wa.me/917974716422" target="_blank">💬 WhatsApp</a>
+      </div>
     </div>
-
-    <br><br>
-
-</body>
+  </body>
 </html>
