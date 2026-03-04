@@ -1,130 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Assignments Home</title>
-</head>
-<body bgcolor="#e6e6e6">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #111, #333);
+        color: white;
+      }
 
-    <div align="center">
-        <table border="1" width="75%" cellpadding="15" bgcolor="white">
-            <tr>
-                <td align="center">
-                    <img src="./assets/profilePhoto.jpg" width="160" height="160" alt="Profile Photo"><br><br>
-                    
-                    <font size="6"><b>🌟 Aman Verma</b></font><br>
-                    <font size="4">B.Tech CSE Student • Frontend Developer • UI/UX Designer</font><br>
-                    <hr width="40%" color="gray">
-                    <font size="3">"Passionate about building beautiful web experiences with clean HTML."</font>
-                </td>
-            </tr>
-        </table>
+      .card {
+        width: 75%;
+        margin: 25px auto;
+        background: white;
+        color: black;
+        border-radius: 16px;
+        padding: 30px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 4px solid #000;
+        object-fit: cover;
+      }
+
+      .category-title {
+        text-align: center;
+        font-size: 34px;
+        font-weight: 600;
+        margin-top: 40px;
+      }
+
+      .category-container {
+        text-align: center;
+      }
+
+      .category-btn {
+        display: inline-block;
+        margin: 12px;
+        padding: 14px 30px;
+        background: linear-gradient(135deg, #000, #444);
+        color: white;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .category-btn:hover {
+        background: linear-gradient(135deg, #333, #000);
+        box-shadow:
+          0 0 10px #000,
+          0 0 20px #000;
+        transform: scale(1.05);
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      .contact-links a {
+        color: black;
+        font-weight: 500;
+        margin: 0 8px;
+      }
+
+      .contact-links a:hover {
+        color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card" align="center">
+      <img src="./assets/profilePhoto.jpg" class="profile-img" /><br /><br />
+      <h1>🌟 Aman Verma</h1>
+      <h3>B.Tech CSE Student • Frontend Developer • UI/UX Designer</h3>
+      <hr width="40%" />
+      <p>
+        <i>"Passionate about building beautiful web experiences with clean HTML."</i>
+      </p>
     </div>
 
-    <br><br>
-
-
-    <div align="center">
-        <table border="1" width="75%" cellpadding="20" bgcolor="#ffffff">
-            <tr>
-                <td align="center">
-                    <font size="7"><b>📘 HTML Assignments Website</b></font><br>
-                    <font size="4">Created by : <b>Aman Verma</b></font>
-                </td>
-            </tr>
-        </table>
+    <div class="card" align="center">
+      <h1>📘 HTML Assignments Website</h1>
+      <h3>Created by : <b>Aman Verma</b></h3>
     </div>
 
-    <br>
-
-
-    <div align="center">
-        <table border="1" width="75%" cellpadding="15" bgcolor="white">
-            <tr>
-                <td>
-                    <font size="5"><b>📌 Welcome!</b></font><br><br>
-                    <font size="4">
-                        This website contains different categories of HTML assignments:
-                        <ul>
-                            <li><b>Basic HTML</b></li>
-                            <li><b>Forms</b></li>
-                            <li><b>Lists</b></li>
-                            <li><b>Tables</b></li>
-                        </ul>
-                        Click any category below to view tasks and solutions.
-                    </font>
-                </td>
-            </tr>
-        </table>
+    <div class="card">
+      <h2>📌 Welcome!</h2>
+      <p style="font-size: 18px">
+        This website contains different categories of HTML assignments:
+      </p>
+      <ul style="font-size: 18px">
+        <li><b>Basic HTML</b></li>
+        <li><b>Forms</b></li>
+        <li><b>Lists</b></li>
+        <li><b>Tables</b></li>
+      </ul>
+      <p style="font-size: 18px">
+        Click any category below to view tasks and solutions.
+      </p>
     </div>
 
-    <br>
+    <div class="category-title">📂 Assignment Categories</div>
 
+    <hr width="60%" color="white" />
 
-    <div align="center">
-        <font size="6"><b>📂 Assignment Categories</b></font>
-    </div>
-    <hr width="60%" color="red">
-
-    <br>
-
-
-    <div align="center">
-        <table border="1" width="75%" cellpadding="15" bgcolor="white">
-            
-            <tr>
-                <td align="center">
-                    <font size="5">📄 <b><a href="./BasicHtmlTask/subIndex.html">Basic HTML Tasks</a></b></font>
-                </td>
-            </tr>
-
-            <tr>
-                <td align="center">
-                    <font size="5">📝 <b><a href="./FormTaskInHtml/subIndex.html">Form Tasks</a></b></font>
-                </td>
-            </tr>
-
-            <tr>
-                <td align="center">
-                    <font size="5">📋 <b><a href="./ListTaskInHtml/subIndex.html">List Tasks</a></b></font>
-                </td>
-            </tr>
-
-            <tr>
-                <td align="center">
-                    <font size="5">📊 <b><a href="./TableTaskInHtml/subIndex.html">Table Tasks</a></b></font>
-                </td>
-            </tr>
-
-        </table>
+    <div class="card category-container">
+      <a class="category-btn" href="./BasicHtmlTask/subIndex.html">📄 Basic HTML Tasks</a>
+      <a class="category-btn" href="./FormTaskInHtml/subIndex.html">📝 Form Tasks</a>
+      <a class="category-btn" href="./ListTaskInHtml/subIndex.html">📋 List Tasks</a>
+      <a class="category-btn" href="./TableTaskInHtml/subIndex.html">📊 Table Tasks</a>
     </div>
 
-    <br><br>
+    <div class="card" align="center">
+      <h2>📞 Contact Me</h2>
+      <h3>Aman Verma</h3>
+      <p style="font-size: 18px">
+        Phone : <b>+91 7974716422</b><br />
+        Email : <b>amanverma78503@gmail.com</b>
+      </p>
+      
+      <br/>
 
-
-    <div align="center">
-        <table border="1" width="75%" cellpadding="15" bgcolor="white">
-            <tr>
-                <td align="center">
-                    <font size="5"><b>📞 Contact Me</b></font><br><br>
-
-                    <font size="4">
-                        <b>Aman Verma</b><br><br>
-                        Phone : +91 7974716422<br>
-                        Email : amanverma78503@gmail.com<br><br>
-
-                        <a href="https://github.com/CodeWithAman" target="_blank">🌐 GitHub</a> |
-                        <a href="https://www.linkedin.com/in/aman-verma-cs20/" target="_blank">💼 LinkedIn</a> |
-                        <a href="https://wa.me/917974716422" target="_blank">💬 WhatsApp</a>
-                    </font>
-                </td>
-            </tr>
-        </table>
+      <div class="contact-links">
+        <a href="https://github.com/CodeWithAman" target="_blank">🌐 GitHub</a>
+        <a href="https://www.linkedin.com/in/aman-verma-cs20/" target="_blank">💼 LinkedIn</a>
+        <a href="https://wa.me/917974716422" target="_blank">💬 WhatsApp</a>
+      </div>
     </div>
-
-    <br><br>
-
-</body>
+  </body>
 </html>
