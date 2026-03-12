@@ -19,7 +19,7 @@
 }
 
 #item2 {
-    display: none;
+    display: inline-block;
 }
 
 .spanBox {
