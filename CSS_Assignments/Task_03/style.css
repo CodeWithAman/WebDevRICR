@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+#main-container {
+    background-color: rgb(64, 112, 243);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgba(255, 255, 255);
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: fit-content;
+    display: grid;
+    gap: 24px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+}
+
+.form-field input {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    width: 100%;
+    outline: none;
+}
+
+u {
+    color: rgb(64, 112, 243);
+}
+
+.terms {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.terms div {
+    color: rgb(69, 68, 68);
+    display: flex;
+    gap: 8px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: rgb(64, 112, 243);
+    font-weight: 600;
+}
+
+.submit-button button{
+    border: 1px solid rgb(64, 112, 243);
+    background-color: rgb(64, 112, 243);
+    padding: 11px;
+    width: 100%;
+    color: rgba(255, 255, 255);
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.reference-link{
+    font-size: 12px;
+}
+
+.reference-link a{
+    text-decoration: none;
+    color:  rgb(64, 112, 243);
+    font-weight:600;
+}
+
+.reference-link p{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
