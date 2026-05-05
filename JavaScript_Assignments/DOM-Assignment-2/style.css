@@ -1,0 +1,10 @@
+.form-box{
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+#result{
+    display: none;
+    color: green;
+    font-weight: bold;
+}
