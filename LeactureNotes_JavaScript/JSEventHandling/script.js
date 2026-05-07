@@ -44,21 +44,21 @@ const paraPicker = document.getElementById("paraPicker");
 
 
 
-bgPicker.addEventListener("input", function () {
+bgPicker.addEventListener("change", function () {
     contentArea.style.backgroundColor = bgPicker.value;
 });
 
 
 
 
-headingPicker.addEventListener("input", function () {
+headingPicker.addEventListener("change", function () {
     mainHeading.style.color = headingPicker.value;
 });
 
 
 
 
-paraPicker.addEventListener("input", function () {
+paraPicker.addEventListener("changet", function () {
     mainPara.style.color = paraPicker.value;
 });
 
