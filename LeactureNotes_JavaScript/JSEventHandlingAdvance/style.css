@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+
+#bulb1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#parenr-box{
+    display: flex;
+    gap: 10px;
+}
+
+#redBulb{
+    background-color: red;
+}
+
+#greenBulb{
+    background-color: green;
+}
+
+#blueBulb{
+    background-color: blue;
+}
+
+.boxs{
+    width: 50px;
+    height: 30px;
+}
