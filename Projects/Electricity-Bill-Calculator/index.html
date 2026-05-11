@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electricity-Bill-Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="card bill-card">
+        <div class="header">
+            <h1>Electricity Bill Calculator</h1>
+            <p>Calculate your electricity bill instantly</p>
+        </div>
+
+        <div class="content">
+            <div class="mb-4">
+                <label class="form-label fs-4 fw-semibold mb-3">
+                    Enter Electricity Units
+                </label>
+
+                <input
+                    type="number"
+                    id="units"
+                    class="form-control form-control-lg"
+                    placeholder="Enter units consumed"
+                />
+            </div>
+
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <button id="calculateBtn" class="btn btn-primary w-100 btn-custom">
+                    Calculate Bill
+                    </button>
+                </div>
+
+                <div class="col-md-6">
+                    <button id="resetBtn" class="btn btn-danger w-100 btn-custom">
+                    Reset / Clear
+                    </button>
+                </div>
+            </div>
+
+        <div id="result" class="d-none">
+            <div class="card result-card p-4">
+                <h3 class="fw-bold mb-4 text-center">Bill Details</h3>
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <tbody>
+                            <tr>
+                                <td>First 50 Units</td>
+                                <td id="slab1Units">0</td>
+                                <td id="slab1Charge">₹0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Next 150 Units</td>
+                                <td id="slab2Units">0</td>
+                                <td id="slab2Charge">₹0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Next 250 Units</td>
+                                <td id="slab3Units">0</td>
+                                <td id="slab3Charge">₹0.00</td>
+                            </tr>
+
+                            <tr>
+                                <td>Above 450 Units</td>
+                                <td id="slab4Units">0</td>
+                                <td id="slab4Charge">₹0.00</td>
+                            </tr>
+
+                            <tr class="table-primary total-row">
+                                <td>Subtotal</td>
+                                <td colspan="2" id="subtotal">₹0.00</td>
+                            </tr>
+
+                            <tr class="table-warning total-row">
+                                <td>20% Surcharge</td>
+                                <td colspan="2" id="surcharge">₹0.00</td>
+                            </tr>
+
+                            <tr class="table-success total-row">
+                                <td>Grand Total</td>
+                                <td colspan="2" id="grandTotal">₹0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
