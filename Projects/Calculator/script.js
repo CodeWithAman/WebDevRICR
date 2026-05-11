@@ -105,5 +105,5 @@ buttons.forEach(function(button)
 
             display.innerText = expression
         }
-    })
-})
+    });
+});
