@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Bill-Calculator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card travel-card">
+        <div class="header">
+            <h1>Travel Bill Calculator</h1>
+            <p>Calculate your travel fare instantly</p>
+        </div>
+
+        <div class="content">
+             <div class="mb-4">
+                <label class="form-label fs-4 fw-semibold mb-3">Enter Kilometers Covered</label>
+                <input type="number" id="kmInput" class="form-control form-control-lg" placeholder="Enter Distance" step="0.1">
+
+
+                <div id="error" class="text-danger mt-2 fw-semibold"></div>
+            </div>
+
+            <button id="calculateBtn" class="btn btn-primary btn-lg w-100 mb-4">Calculate Bill</button>
+
+            <div  id="result" class="d-none">
+                <div class="card result-card p-4">
+                    <div class="text-center mb-4">
+                        <h3 class="fw-bold">Total Bill</h3>
+
+                        <div id="totalBill" class="total-amount">
+                            Rs. 0
+                        </div>
+                    </div>
+                    
+                    <h4 class="fw-bold mb-3">Fare Breakdown</h4>
+                    
+                    <div id="breakdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+  crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
