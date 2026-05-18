@@ -28,7 +28,10 @@
         <form id="registrationFrom">
           <section class="bg-white p-3 rounded border mb-3">
             <div class="p-2 mt-2">
-              <label for="fullName" class="form-label fw-bold">Full Name</label>
+              <label for="fullName" class="form-label fw-bold">
+                Full Name
+              </label>
+
               <input
                 type="text"
                 name="fullName"
@@ -37,13 +40,16 @@
                 placeholder="Rahul Kumar"
                 required
               />
+
               <span
                 class="text-danger small manualError"
                 id="fullNameError"
               ></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="email" class="form-label fw-bold">Email</label>
+              <label for="email" class="form-label fw-bold"> Email </label>
+
               <input
                 type="email"
                 name="email"
@@ -52,15 +58,18 @@
                 placeholder="rahulkumar@example.com"
                 required
               />
+
               <span
                 class="text-danger small manualError"
                 id="emailError"
               ></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="phone" class="form-label fw-bold"
-                >Mobile Number</label
-              >
+              <label for="phone" class="form-label fw-bold">
+                Mobile Number
+              </label>
+
               <input
                 type="number"
                 name="phone"
@@ -69,24 +78,26 @@
                 placeholder="9876543210"
                 required
               />
+
               <span
                 class="text-danger small manualError"
                 id="phoneError"
               ></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="dob" class="form-label fw-bold">Date of Birth</label>
-              <input
-                type="date"
-                name="dob"
-                id="dob"
-                class="form-control"
-                placeholder="Rahul Kumar"
-              />
+              <label for="dob" class="form-label fw-bold">
+                Date of Birth
+              </label>
+
+              <input type="date" name="dob" id="dob" class="form-control" />
+
               <span class="text-danger small manualError" id="dobError"></span>
             </div>
+
             <div class="p-2 mt-2 d-flex gap-5">
-              <label for="gender" class="form-label fw-bold">Gender</label>
+              <label for="gender" class="form-label fw-bold"> Gender </label>
+
               <div>
                 <input
                   type="radio"
@@ -95,8 +106,10 @@
                   value="male"
                   class="form-switch"
                 />
+
                 <span>Male</span>
               </div>
+
               <div>
                 <input
                   type="radio"
@@ -105,8 +118,10 @@
                   value="female"
                   class="form-switch"
                 />
+
                 <span>Female</span>
               </div>
+
               <div>
                 <input
                   type="radio"
@@ -115,38 +130,52 @@
                   value="others"
                   class="form-switch"
                 />
+
                 <span>Others</span>
               </div>
-              <span class="text-danger small manualError" id="dobError"></span>
+
+              <span
+                class="text-danger small manualError"
+                id="genderError"
+              ></span>
             </div>
           </section>
 
           <section class="bg-white p-3 rounded border mb-3">
             <div class="p-2 mt-2">
-              <label for="qualification" class="form-label fw-bold"
-                >Last Completed Qualification</label
-              >
+              <label for="qualification" class="form-label fw-bold">
+                Last Completed Qualification
+              </label>
+
               <select
                 name="qualification"
                 id="qualification"
                 class="form-select"
               >
                 <option value="">Select Qualification</option>
+
                 <option value="10">Matriculation</option>
+
                 <option value="12">Intermediate</option>
+
                 <option value="diploma">Diploma</option>
+
                 <option value="UG">Graduation</option>
+
                 <option value="PG">Post Graduation</option>
               </select>
+
               <span
                 class="text-danger small manualError"
                 id="qualificationError"
               ></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="marks" class="form-label fw-bold"
-                >Percentage/Grade</label
-              >
+              <label for="marks" class="form-label fw-bold">
+                Percentage/Grade
+              </label>
+
               <input
                 type="text"
                 name="marks"
@@ -154,6 +183,7 @@
                 class="form-control"
                 placeholder="90% or A-F"
               />
+
               <span
                 class="text-danger small manualError"
                 id="marksError"
@@ -163,26 +193,35 @@
 
           <section class="bg-white p-3 rounded border mb-3">
             <div class="p-2 mt-2">
-              <label for="course" class="form-label fw-bold"
-                >Preferred Course</label
-              >
+              <label for="course" class="form-label fw-bold">
+                Preferred Course
+              </label>
+
               <select name="course" id="course" class="form-select">
                 <option value="">Select Course</option>
+
                 <option value="iitJee">IIT-JEE</option>
+
                 <option value="neet">NEET</option>
+
                 <option value="bankingExams">Banking Exams</option>
+
                 <option value="ca/cs">CA/CS</option>
+
                 <option value="upsc">UPSC</option>
               </select>
+
               <span
                 class="text-danger small manualError"
                 id="courseError"
               ></span>
             </div>
+
             <div class="p-2 mt-2 d-flex gap-5 align-items-center">
-              <label for="timings" class="form-label fw-bold"
-                >Batch Timing Preference</label
-              >
+              <label for="timings" class="form-label fw-bold">
+                Batch Timing Preference
+              </label>
+
               <div class="d-flex gap-2">
                 <input
                   type="checkbox"
@@ -191,8 +230,10 @@
                   value="morning"
                   class="form-check"
                 />
+
                 <span>Morning</span>
               </div>
+
               <div class="d-flex gap-2">
                 <input
                   type="checkbox"
@@ -201,8 +242,10 @@
                   value="evening"
                   class="form-check"
                 />
+
                 <span>Evening</span>
               </div>
+
               <div class="d-flex gap-2">
                 <input
                   type="checkbox"
@@ -211,8 +254,10 @@
                   value="afternoon"
                   class="form-check"
                 />
+
                 <span>AfterNoon</span>
               </div>
+
               <div class="d-flex gap-2">
                 <input
                   type="checkbox"
@@ -221,8 +266,10 @@
                   value="weekends"
                   class="form-check"
                 />
+
                 <span>Weekends</span>
               </div>
+
               <span
                 class="text-danger small manualError"
                 id="timingsError"
@@ -232,20 +279,24 @@
 
           <section class="bg-white p-3 rounded border mb-3">
             <div class="p-2 mt-2">
-              <label for="address" class="form-label fw-bold">Address</label>
+              <label for="address" class="form-label fw-bold"> Address </label>
+
               <textarea
                 name="address"
                 id="address"
                 class="form-control"
                 placeholder="123, Main Street"
               ></textarea>
+
               <span
                 class="text-danger small manualError"
                 id="addressError"
               ></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="city" class="form-label fw-bold">City</label>
+              <label for="city" class="form-label fw-bold"> City </label>
+
               <input
                 type="text"
                 name="city"
@@ -253,10 +304,13 @@
                 class="form-control"
                 placeholder="Delhi"
               />
+
               <span class="text-danger small manualError" id="cityError"></span>
             </div>
+
             <div class="p-2 mt-2">
-              <label for="pin" class="form-label fw-bold">Pin Code</label>
+              <label for="pin" class="form-label fw-bold"> Pin Code </label>
+
               <input
                 type="text"
                 name="pin"
@@ -264,12 +318,14 @@
                 class="form-control"
                 placeholder="110001"
               />
+
               <span class="text-danger small manualError" id="pinError"></span>
             </div>
           </section>
 
           <div class="d-flex justify-content-between">
             <button type="reset" class="btn btn-secondary">Clear</button>
+
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
