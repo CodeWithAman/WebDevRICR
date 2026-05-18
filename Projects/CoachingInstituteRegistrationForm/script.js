@@ -61,26 +61,53 @@ function validateData(data) {
 
   console.log(data);
 
-  if (!data.FullName) 
-  {
+  
+  if (!data.FullName) {
     document.getElementById("fullNameError").innerText = "Full Name Required";
     isVaild = false;
-  }
-  else if (!/^[A-Za-z\s]+$/.test(data.FullName)) {
+  } else if (!/^[A-Za-z\s]+$/.test(data.FullName)) {
     document.getElementById("fullNameError").innerText =
-    "Only alphabets and spaces are allowed";
+      "Only alphabets and spaces are allowed";
     isVaild = false;
   }
 
 
-  if(!data.Email)
-  {
+  if (!data.Email) {
     document.getElementById("emailError").innerText = "Email Required";
     isVaild = false;
-  }
-  else if(!/^[A-Za-z\d\_\.]+@(gmail.com|outlook.com|ricr.in)$/.test(data.Email)){
-    document.getElementById("emailError").innerText = "Only standard Email format allowed";
+  } else if (
+    !/^[A-Za-z\d\_\.]+@(gmail.com|outlook.com|ricr.in)$/.test(data.Email)
+  ) {
+    document.getElementById("emailError").innerText =
+      "Only standard Email format allowed";
     isVaild = false;
+  }
+
+
+  if (!data.Phone) {
+    document.getElementById("phoneError").innerText = "Phone Number Required";
+    isVaild = false;
+  } else if (!/[6-9]\d{9}^$/.test(data.Phone)) {
+    document.getElementById("phoneError").innerText =
+      "Only Indian Mobile Number allowed";
+    isVaild = false;
+  }
+
+
+  if (!data.DateofBirth) {
+    document.getElementById("dobError").innerText = "Data of Birth Required";
+    isVaild = false;
+  } else {
+    const birthYear = data.DateofBirth.split("-")[0];
+
+    const currentYear = new Data().getFullYear();
+
+    const age = currentYear - birthYear;
+
+    if (age < 14) {
+      document.getElementById("dobError").innerText = "Student must be at least 15 years old";
+      isVaild = false;
+    }
   }
 
   return isVaild;
