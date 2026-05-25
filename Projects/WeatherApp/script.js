@@ -1,4 +1,4 @@
-const API_KEY = "d057c78c6c391b9e6452d5f5cc574dd8";
+const API_KEY = "Add You API";
 
 function getWeatherEmoji(main) {
   const map = {
