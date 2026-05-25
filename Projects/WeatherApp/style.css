@@ -1,0 +1,267 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: #f0f4fa;
+  min-height: 100vh;
+  padding: 40px 16px 60px;
+  color: #1a1d2e;
+}
+
+.search-input {
+  border: 1.5px solid #dde3f0;
+  border-radius: 14px;
+  padding: 14px 20px 14px 48px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fff;
+  color: #1a1d2e;
+  box-shadow: none;
+  transition: border-color 0.2s;
+}
+.search-input::placeholder {
+  color: #aab0c8;
+}
+.search-input:focus {
+  border-color: #4f7fff;
+  box-shadow: 0 0 0 4px rgba(79, 127, 255, 0.1);
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aab0c8;
+  pointer-events: none;
+}
+.btn-search {
+  border-radius: 14px;
+  background: #4f7fff;
+  border: none;
+  color: #fff;
+  width: 52px;
+  height: 52px;
+  font-size: 18px;
+  flex-shrink: 0;
+  transition:
+    background 0.2s,
+    transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-search:hover {
+  background: #3d6ee8;
+}
+.btn-search:active {
+  transform: scale(0.95);
+}
+
+.main-card {
+  background: linear-gradient(135deg, #4f7fff 0%, #6a9dff 100%);
+  border-radius: 24px;
+  padding: 36px 32px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.main-card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+.main-card::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 30px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+.weather-emoji {
+  font-size: 80px;
+  line-height: 1;
+  animation: float 4s ease-in-out infinite;
+  display: block;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.15));
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.temp-display {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -3px;
+}
+.weather-name {
+  font-size: 22px;
+  font-weight: 700;
+  opacity: 0.95;
+}
+.weather-desc {
+  font-size: 14px;
+  opacity: 0.75;
+  text-transform: capitalize;
+  margin-top: 4px;
+}
+.country-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 16px;
+  border: 1.5px solid #edf0f9;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  height: 100%;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(79, 127, 255, 0.1);
+  border-color: #c8d5ff;
+}
+.stat-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.icon-blue {
+  background: #eef2ff;
+}
+.icon-teal {
+  background: #e6faf5;
+}
+.icon-amber {
+  background: #fff8e6;
+}
+.icon-rose {
+  background: #fff0f3;
+}
+.icon-orange {
+  background: #fff3ec;
+}
+.icon-sky {
+  background: #e8f4ff;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9ba3c0;
+  margin-bottom: 4px;
+}
+.stat-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1d2e;
+  letter-spacing: -0.5px;
+}
+
+.sun-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px 20px;
+  border: 1.5px solid #edf0f9;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.sun-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(79, 127, 255, 0.1);
+  border-color: #c8d5ff;
+}
+.sun-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.sun-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #9ba3c0;
+  margin-bottom: 3px;
+}
+.sun-value {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1d2e;
+  letter-spacing: -0.3px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1a1d2e;
+  letter-spacing: -0.5px;
+}
+.logo-text span {
+  color: #4f7fff;
+}
+.logo-sub {
+  font-size: 12px;
+  color: #9ba3c0;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 576px) {
+  .temp-display {
+    font-size: 56px;
+  }
+  .weather-emoji {
+    font-size: 60px;
+  }
+  .main-card {
+    padding: 24px 20px;
+  }
+}
