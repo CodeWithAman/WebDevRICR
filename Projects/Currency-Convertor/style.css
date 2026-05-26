@@ -98,3 +98,50 @@ form .drop-list{
     margin: 0 -5px  0 5px;
     color: black;
 }
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track{
+    background: white;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon{
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 22px;
+    color: white;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+form button{
+    height: 52px;
+    color: #121212;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #74febd;
+    transition: background 0.3s ease , transform 0.2s ease;
+}
+
+form button:hover{
+    background: white;
+    color: #121212;
+    transform: scale(1.0);
+}
+
+form button:active{
+    transform: scale(0.98);
+}
