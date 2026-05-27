@@ -161,7 +161,7 @@ let country_list = {
 };
 
 // api key from exhange rate api
-let apiKey = "55b97612155471fb432a9562";
+let apiKey = "add your api key";
 
 const dropList = document.querySelectorAll("form select");
 const fromCurrency = document.querySelector(".from select");
