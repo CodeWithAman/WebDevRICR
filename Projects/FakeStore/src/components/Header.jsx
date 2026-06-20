@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
 
             <Link
-              to="/product"
+              to="/products"
               className="text-slate-700 font-medium hover:text-blue-700 transition"
             >
               Products
@@ -50,13 +50,57 @@ const Header = () => {
           </nav>
 
           <div className=" flex items-center gap-3">
-            <Link to="/Product" className=" p-2.5 rounded-xl bg-slate-100 hover:bg-blue-100 transition">
-              <FaShoppingBag className=" text-slate-700 text-lg"/>
+            <Link
+              to="/products"
+              className=" p-2.5 rounded-xl bg-slate-100 hover:bg-blue-100 transition"
+            >
+              <FaShoppingBag className=" text-slate-700 text-lg" />
             </Link>
 
-            <button className=" md-hidden p-2.5 rounded-xl bg-slate-100" onclick={() => setOpen(!open)}>{open ? <FaTimes/> : <FaBars/>}</button>
+            <button
+              className="md-hidden p-2.5 rounded-xl bg-slate-100"
+              onClick={() => setOpen(!open)}
+            >
+              {open ? <FaTimes /> : <FaBars />}
+            </button>
           </div>
         </div>
+
+        {open && (
+          <div className="md:hidden flex flex-col px-6 pb-4 bg-white border-t border-slate-200">
+            <Link
+              to="/"
+              onClick={() => setOpen(false)}
+              className=" py-3 text-slate-700"
+            >
+              Home
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={() => setOpen(false)}
+              className=" py-3 text-slate-700"
+            >
+              About
+            </Link>
+
+            <Link
+              to="/products"
+              onClick={() => setOpen(false)}
+              className=" py-3 text-slate-700"
+            >
+              Products
+            </Link>
+
+            <Link
+              to="/contactUs"
+              onClick={() => setOpen(false)}
+              className=" py-3 text-slate-700"
+            >
+              ContactUS
+            </Link>
+          </div>
+        )}
       </header>
     </>
   );
