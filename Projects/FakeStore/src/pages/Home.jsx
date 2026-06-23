@@ -91,9 +91,9 @@ const Home = () => {
               </div>
             </div>
 
-            <div className=" relative h-80 sm:h-96 flex items-center justify-center max-[450px]:-left-5">
+            <div className=" relative h-80 sm:h-96 flex items-center justify-center">
               {hero && (
-                <div className=" relative w-56 sm:w-64 bg-white rounded-3xl shadow-2xl p-5 rotate-3 hover:rotate-0 transition duration-500 animate-bounce max-[450px]:animate-none">
+                <div className=" relative w-56 sm:w-64 bg-white rounded-3xl shadow-2xl p-5 rotate-3 hover:rotate-0 transition duration-500 animate-float-slow">
                   <img
                     src={hero.image}
                     alt={hero.title}
@@ -116,7 +116,7 @@ const Home = () => {
                   </div>
                 </div>
               )}
-              <div className=" absolute top-1 right-8 max-[450px]:-right-7 sm:right-8 bg-white rounded-2xl shadow-2xl px-4 py-3 -rotate-6">
+              <div className=" absolute top-2 right-4 sm:right-8 bg-white rounded-2xl shadow-xl px-4 py-3 -rotate-6">
                 <p className=" text-xs text-slate-400 font-mono">IN STOCK</p>
                 <p className=" font-display font-bold text-slate-900">
                   Ready to ship
@@ -127,7 +127,7 @@ const Home = () => {
         </section>
 
         <section className=" max-w-5xl mx-auto px-6 -mt-2 mb-16 relative z-10">
-          <div className=" recepit-edge bg-slate-900 text-slate-100 rounded-sm py-6 px-6 sm:px-10 grid grid-cols-2 sm:grid-cols-4 gap-6 font-mono shadow-2xl">
+          <div className=" receipt-edge bg-slate-900 text-slate-100 rounded-sm py-6 px-6 sm:px-10 grid grid-cols-2 sm:grid-cols-4 gap-6 font-mono shadow-2xl">
             {trustItems.map((item) => (
               <div key={item.label}>
                 <p className=" text-[11px] sm:text-sm font-bold tracking-wider">
