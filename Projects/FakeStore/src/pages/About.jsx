@@ -46,7 +46,7 @@ const About = () => {
   return (
     <>
       <div>
-        <section className=" bg-gradient-to-b from-blue-100 to-white">
+        <section className=" bg-linear-to-b from-blue-100 to-white">
           <div className=" max-w-7xl mx-auto px-6 py-20 text-center">
             <span className=" inline-block bg-blue-100 text-blue-700 text-xs font-semibold tracking-wide px-3 py-1.5 rounded-full font-mono">
               ABOUT US
@@ -105,7 +105,7 @@ const About = () => {
           <div className=" space-y-8 border-l-2 border-blue-100 pl-8">
             {timeline.map((t) => (
               <div key={t.year} className=" relative">
-                <span className=" absolute -left-[39px] top-1 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100" />
+                <span className=" absolute -left-9.75 top-1 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100" />
                 <p className=" font-mono text-sm text-blue-600 font-bold">
                   {t.year}
                 </p>

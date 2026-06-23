@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <>
       <div>
-        <section className=" relative overflow-hidden bg-gradient-to-b from-blue-100 via-white to-white">
+        <section className=" relative overflow-hidden bg-linear-to-b from-blue-100 via-white to-white">
           <div className=" absolute -top-24 -right-24 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl" />
           <div className=" absolute top-40 -left-20 w-72 h-72 bg-amber-200/40 rounded-full blur-3xl" />
 
