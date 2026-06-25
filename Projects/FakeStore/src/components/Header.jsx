@@ -41,7 +41,7 @@ const Header = () => {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contactUs"
             className="text-slate-700 font-medium hover:text-blue-600 hover:underline transition"
           >
             Contact Us
@@ -92,7 +92,7 @@ const Header = () => {
           </Link>
 
           <Link
-            to="/contact"
+            to="/contactUs"
             onClick={() => setOpen(false)}
             className="py-3 text-slate-700"
           >
