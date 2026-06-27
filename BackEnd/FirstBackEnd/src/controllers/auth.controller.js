@@ -1,4 +1,7 @@
 import User from "../models/user.model.js";
+import bcrypt from "bcrypt";
+
+const SALT = await bcrypt.genSalt(10);
 
 export const RegisterUser = async (req, res, next) => {
   try {
@@ -19,6 +22,8 @@ export const RegisterUser = async (req, res, next) => {
 
     const photoUrl = `https://placehold.co/600x400?text=${fullName.charAt(0).toUpperCase()}`;
 
+    const hashedPassword = await bcrypt.hash(password , SALT);
+
     const photo = {
       url: photoUrl,
       publicId: null,
@@ -29,7 +34,7 @@ export const RegisterUser = async (req, res, next) => {
       email,
       phone,
       gender,
-      password,
+      password:hashedPassword,
       dob,
       photo,
     });
@@ -57,7 +62,8 @@ export const LoginUser = async (req, res, next) => {
       return next(error);
     }
 
-    if (password !== existingUser.password) {
+    const isverified = await bcrypt.compare(password , existingUser.password)
+    if (!isverified) {
       const error = new Error("Incorrect Password");
       error.statusCode = 401;
       return next(error);
